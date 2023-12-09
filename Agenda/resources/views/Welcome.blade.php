@@ -84,7 +84,7 @@ margin-left: 10px;
 </head>
 <body>
     <section class="arealogin">
-        <div class="plogin">
+        <div class="login">
             <div>
               
             </div>
