@@ -14,14 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('cadastro');
-});
+Route::get('/', function () {return view('cadastro');});
 
-Route::get('login', function () {
-    return view('login');
-});
+Route::get('login', function () {return view('login');});
 
-Route::get('agenda', function () {
-    return view('agenda');
-});
+Route::get('agenda', function () {return view('agenda');});
