@@ -4,7 +4,7 @@
     
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="Welcome.css">
 <title>Login</title>
 <style>
 
@@ -95,7 +95,7 @@ margin-left: 10px;
                 <input type="password" name="senha" placeholder="Confirmar Senha">
                 <input type="submit" value="Cadastrar">
             </form>
-            <p>Já tem uma conta ?<a href="">Entrar </p>
+            <p>Já tem uma conta ?<a href="http://127.0.0.1:8000/login">Entrar </p>
         </div>
     </section>
 
