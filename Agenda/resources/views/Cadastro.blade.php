@@ -8,6 +8,8 @@
 <title>Login</title>
 <style>
 
+/* PARTE CSS */
+
 body {
 
 background-color: #1b1f27;
@@ -79,6 +81,8 @@ color: #5568fe;
 text-decoration: none;
 margin-left: 10px;
 }
+
+/* PARTE CSS */
 
 </style>
 </head>

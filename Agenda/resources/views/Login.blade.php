@@ -8,6 +8,8 @@
 <title>Login</title>
 <style>
 
+/* PARTE CSS */
+
 body {
 
 background-color: #1b1f27;
@@ -80,6 +82,8 @@ text-decoration: none;
 margin-left: 10px;
 }
 
+/* PARTE CSS */
+
 </style>
 </head>
 <body>
@@ -91,7 +95,7 @@ margin-left: 10px;
             <form method="POST">
                 <input type="text" name="nome" placeholder="Nome de usuario" autofocus>
                 <input type="password" name="senha" placeholder="Senha">
-                <input type="submit" value="entrar">
+                <input type="submit" value="Entrar">   
             </form>
             <p>Ainda não tem uma conta?<a href="http://127.0.0.1:8000">Criar conta </p>
         </div>
@@ -99,3 +103,6 @@ margin-left: 10px;
 
 </body>
 </html>
+
+
+<button type="button" class="btn btn-outline-dark">Sair</button></a>
