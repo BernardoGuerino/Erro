@@ -147,6 +147,16 @@
             transition: background-color 0.3s ease;
         }
 
+        .task-buttons button.done {
+            background-color: #4caf50; /* Cor de fundo para o botão de check */
+            color: #fff; /* Cor do texto para o botão de check */
+        }
+
+        .task-buttons button.delete {
+            background-color: #ff5252; /* Cor de fundo para o botão de delete */
+            color: #fff; /* Cor do texto para o botão de delete */
+        }
+
         .task-buttons button:hover {
             background-color: #5568fe;
         }
@@ -260,13 +270,15 @@
                 });
 
                 const deleteButton = document.createElement('button');
-                deleteButton.textContent = 'Excluir';
+                deleteButton.innerHTML = '&#10006;'; // Código HTML para o ícone de X
+                deleteButton.classList.add('delete'); // Adiciona a classe 'delete'
                 deleteButton.addEventListener('click', function () {
-                    deleteTask(taskButtons.parentElement);
+                    deleteTask(taskButtons);
                 });
 
                 const doneButton = document.createElement('button');
-                doneButton.textContent = 'Realizada';
+                doneButton.innerHTML = '&#10003;'; // Código HTML para o ícone de check
+                doneButton.classList.add('done'); // Adiciona a classe 'done'
                 doneButton.addEventListener('click', function () {
                     confirmMarkAsDone(taskButtons.parentElement);
                 });
@@ -293,8 +305,8 @@
                 taskElement.textContent = `${newText} - ${newDate} ${newTime}`;
             }
 
-            function deleteTask(taskElement) {
-                taskElement.remove();
+            function deleteTask(taskButtons) {
+                taskButtons.parentElement.remove();
 
                 // Mostrar a mensagem se não houver mais tarefas
                 noTasksMessage.classList.toggle('show', taskList.children.length === 0);
